@@ -166,17 +166,6 @@ var ucapanWaktu = 'Good Night'
         }            
             
 //━━━━━━━━━━━━━━━[ BUTTON ]━━━━━━━━━━━━━━━━━//
-const sendButton = async (from, context, fortext, but, rn) => {
-            buttonMessages = {
-                contentText: context,
-                footerText: fortext,
-                buttons: but,
-                headerType: 1
-            }
-            Rendy.sendMessage(from, buttonMessages, buttonsMessage, {
-                quoted: ftrol
-            })
-        }
         const sendButton = async (from, context, fortext, but, mek) => {
         buttonMessages = {
         contentText: context,
@@ -292,6 +281,29 @@ const sendButton = async (from, context, fortext, but, rn) => {
                           }
                         }
                       }        
+        const ftoko = {
+key: {
+			fromMe: false,
+			participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289523258649-1604595598@g.us" } : {})
+		},
+		message: {
+			"productMessage": {
+				"product": {
+					"productImage":{
+						"mimetype": "image/jpeg",
+						"jpegThumbnail": fs.readFileSync(`media/gambar/biasa.png`) //Gambarnye
+					},
+					"title": 'Whatsapp bot', 
+					"description": "ArulBotz", 
+					"currencyCode": "IDR",
+					"priceAmount1000": "70000000",
+					"retailerId": 'Whatsapp Bot',
+					"productImageCount": 1
+				},
+				    "businessOwnerJid": `0@s.whatsapp.net`
+		}
+	}
+}
 
 //━━━━━━━━━━━━━━━[ CONNECTION 2 ]━━━━━━━━━━━━━━━\\
 
