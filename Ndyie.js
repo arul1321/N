@@ -291,7 +291,7 @@ key: {
 				"product": {
 					"productImage":{
 						"mimetype": "image/jpeg",
-						"jpegThumbnail": fs.readFileSync(`media/gambar/biasa.png`) //Gambarnye
+						"jpegThumbnail": fs.readFileSync(`./Poto/gura3.png`) //Gambarnye
 					},
 					"title": 'Whatsapp bot', 
 					"description": "ArulBotz", 
