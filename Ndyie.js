@@ -177,6 +177,48 @@ const sendButton = async (from, context, fortext, but, rn) => {
                 quoted: ftrol
             })
         }
+        const sendButton = async (from, context, fortext, but, mek) => {
+        buttonMessages = {
+        contentText: context,
+        footerText: fortext,
+        buttons: but,
+        headerType: 1
+            }
+        Rendy.sendMessage(from, buttonMessages, buttonsMessage, {
+        quoted: fkontak
+        })
+        }
+        const sendButMessage = (id, text1, desc1, but = [], options = {}) => {
+        const buttonMessage = {
+        contentText: text1,
+        footerText: desc1,
+        buttons: but,
+        headerType: 1,
+        };
+        Rendy.sendMessage(
+        id,
+        buttonMessage,
+        MessageType.buttonsMessage,
+        options
+        );
+        };
+        const sendButImage = async (from, context, fortext, img, but, mek) => {
+        jadinya = await Rendy.prepareMessage(from, img, image)
+        buttonMessagesI = {
+        imageMessage: jadinya.message.imageMessage,
+        contentText: context,
+        footerText: fortext,
+        buttons: but,
+        headerType: 4
+        }
+        Rendy.sendMessage(from, buttonMessagesI, buttonsMessage, {
+        quoted: fkontak,
+        })
+        }
+        async function sendButLocation(id, text1, desc1, gam1, but = [], options = {}) {
+        const buttonMessages = { locationMessage: { jpegThumbnail: gam1 }, contentText: text1, footerText: desc1, buttons: but, headerType: 6 }
+        return Rendy.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+        }
             
 //━━━━━━━━━━━━━━━[ FAKE FAKEAN ]━━━━━━━━━━━━━━━\\
         const fakestatus = (teks) => {
@@ -325,10 +367,7 @@ if (!rn.key.fromMe && isSelf === true) return
 switch (command) {           
 case 'help':        
 case 'menu':
-timestamp = speed();
-latensi = speed() - timestamp
-privat = Rendy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-groups = Rendy.chats.array.filter(v => v.jid.endsWith('g.us'))
+var p = '*'
 teks = 
 `┏━━━━━━━━━━━━━━━⬣ 
 ┃┃✯┏━━⬣ *ARUL BOTZ*
