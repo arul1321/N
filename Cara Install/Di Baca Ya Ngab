@@ -1,0 +1,26 @@
+pkg update && pkg upgrade
+pkg install nodejs
+pkg install git
+pkg install ffmpeg
+pkg install imagemagick
+termux-setup-storage
+cd /sdcard
+cp -r BaseNdy $HOME
+cd
+cd BaseNdy
+bash install.sh
+npm start
+[Sqann]
+
+Kalo Udah Semua Ketik
+cd BaseNdy
+npm start
+
+Note : Jika Ada Tulisan Eror (npm start saja itu gak eror)
+
+
+
+Thanks To
+
+~Ndyie Botz
+~NYX
