@@ -1,15 +1,3 @@
-/*
-Base By Smz Team
-
-Thanks To
-Ndyie Botz
-Mel Canz YT
-Caliph
-NYX
-Hardianto
-Yogi Presetya
-*/
-
 /*Note Jika Copas Di Sc Lain mek Ganti Jadi rn*/
 
 const {
@@ -36,9 +24,9 @@ const moment = require('moment-timezone')
 const { exec, spawn, execSync } = require('child_process')
 
 //━━━━━━━━━━━━━━━[ POTO ]━━━━━━━━━━━━━━━\\
-tamnel = fs.readFileSync('./Poto/Ndy.jpg')
-gambar = fs.readFileSync('./Poto/Ndyie.jpg')
-gambar = fs.readFileSync('./Poto/Rendy.jpg')
+tamnel = fs.readFileSync('./Poto/gura1.png')
+gambar = fs.readFileSync('./Poto/gura2.png')
+gambar = fs.readFileSync('./Poto/gura3.png')
 
 //━━━━━━━━━━━━━━━[ LIB ]━━━━━━━━━━━━━━━\\
 const { color, bgcolor } = require('./lib/color')
@@ -50,15 +38,15 @@ const pendaftar = JSON.parse(fs.readFileSync('./Smz/user.json'))
 
 
 //━━━━━━━━━━━━━━━[ SETTING ]━━━━━━━━━━━━━━━\\
-const ownerNumber = ["6283818744065"]
-const ownerName = ["Ndyie"]
-const botName = ["RN×Bot"]
+const ownerNumber = ["6281229859085"]
+const ownerName = ["ArulGanz"]
+const botName = ["BotWhatsApp"]
 
 //━━━━━━━━━━━━━━━[ DONASI ]━━━━━━━━━━━━━━━\\
-const ovo = ["083818744065"]
-const dana = ["083818744065"]
-const gopay = ["083818744065"]
-const pulsa =["083818744065"]
+const ovo = ["0858-6913-4434"]
+const dana = ["0858-6913-4434"]
+const gopay = ["0858-6913-4434"]
+const pulsa =["0858-6913-4434"]
 
 
 //━━━━━━━━━━━━━━━[ GRUP ]━━━━━━━━━━━━━━━\\
@@ -342,56 +330,49 @@ latensi = speed() - timestamp
 privat = Rendy.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
 groups = Rendy.chats.array.filter(v => v.jid.endsWith('g.us'))
 teks = 
-`╭──「 *INFO USER* 」
-│ Nama User : ${pushname}
-│ Jam : ${time2}
-│ Waktu : ${ucapanWaktu}
-│ Prefix : 「 ${prefix} 」
-╰────────────┈ ⳹
-
-╭──「 *INFO BOT* 」
-│ Nama Owner : ${ownerName}
-│ Nomer Owner : ${ownerNumber}
-│ Bot Nama : ${botName}
-│ Total Pengguna : ${pendaftar.length}
-│ Total Chat : ${totalchat.length}
-│ Private Chat : ${privat.length}
-│ Total Grup : ${groups.length}
-╰────────────┈ ⳹
-
-╭──「 *DONASI* 」
-│ Ovo : ${ovo}
-│ Dana : ${dana}
-│ Pulsa : ${pulsa}
-│ Gopay : ${gopay}
-╰────────────┈ ⳹
-
-╭─「  *INDONESIA TIME* 」
-│ Wib : ${wib} 
-│ Wita : ${wita} 
-│ Wit : ${wit} 
-╰────────────┈ ⳹
-
-
-━━━━━━━ 𝗠𝗘𝗡𝗨 ━━━━━━━
-
-╭─「  *Owner Menu* 」
-│ ⤷ ${prefix}public
-│ ⤷ ${prefix}self
-│ ⤷ ${prefix}tes
-│ ⤷ ${prefix}rules
-╰────────────┈ ⳹`
-but = [
-          { buttonId: `${prefix}rules`, buttonText: { displayText: 'Rules' }, type: 1 }
-        ]
-        sendButton(from, teks, 'Ndyie Botz', but, rn)
-break
-
-
-
-
-
-
+`┏━━━━━━━━━━━━━━━⬣ 
+┃┃✯┏━━⬣ *ARUL BOTZ*
+┃┃✯┃⬡ ${p}⚜️Hai kak ${pushname}${p}		
+┃┃✯┃⬡ ${p}🔣Prefix : ${prefix}${p}
+┃┃✯┃⬡ ${p}🌟Runtime : ${kyun(uptime)}${p}
+┃┃✯┗━━⬣
+┗━━━━━━━━━━━━━━━⬣
+┏━━━━━━━➤「 𝐌𝐄𝐍𝐔 𝐍𝐘𝐀」
+┃┃✯${p}1. ${prefix}sticker <reply img>${p}
+┃┃✯${p}2. ${prefix}sticker2 <reply img>${p}
+┃┃✯${p}3. ${prefix}toimg <reply sticker>${p}
+┃┃✯${p}4. ${prefix}wiki <query>${p}
+┃┃✯${p}5. ${prefix}pinterest <query>${p}
+┃┃✯${p}6. ${prefix}tourl <reply media>${p}
+┃┃✯${p}7. ${prefix}ssweb <Url>${p}
+┃┃✯┏━━⬣ 𝖮𝖶𝖭𝖤𝖱 𝖬𝖤𝖭𝖴 
+┃┃✯┃⬡ ${p}1. ${prefix}bc <query>${p}                   
+┃┃✯┃⬡ ${p}2. ${prefix}bc2 <query>${p}                
+┃┃✯┃⬡ ${p}3. ${prefix}bcs <reply sticker>${p}     
+┃┃✯┃⬡ ${p}4. ${prefix}bca <reply audio>${p}
+┃┃✯┃⬡ ${p}5. ${prefix}bcv <reply gif/video>${p}
+┃┃✯┗━━━━━━━━━━⬣
+┃┃✯┏━━⬣ 𝖦𝖱𝖴𝖯 𝖬𝖤𝖭𝖴
+┃┃✯┃⬡ ${p}1. ${prefix}setgc ${p}
+┃┃✯┃⬡ ${p}2. ${prefix}tagall <query>${p}
+┃┃✯┃⬡ ${p}3. ${prefix}hidetag <teks>${p}
+┃┃✯┗━━━━━━━━━━⬣
+┃┃✯┏━━⬣ 𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣 𝖬𝖤𝖭𝖴 
+┃┃✯┃⬡ ${p}1. ${prefix}play <query>${p}                   
+┃┃✯┃⬡ ${p}2. ${prefix}ytdl <url>${p}                
+┃┃✯┃⬡ ${p}3. ${prefix}ytmp3 <url>${p}     
+┃┃✯┃⬡ ${p}4. ${prefix}ytmp4 <url>${p}
+┃┃✯┃⬡ ${p}4. ${prefix}ttwm <url>${p}
+┃┃✯┃⬡ ${p}5. ${prefix}ttnowm <url>${p}
+┃┃✯┗━━━━━━━━━━⬣
+┗━━━━━━━「 *Bot WhatsaApp by ArulGanz*」
+`
+           gam = fs.readFileSync('./Poto/gura3.png')
+           but = [
+          { buttonId: `${prefix}owner`, buttonText: { displayText: '```OWNER```' }, type: 1 }, { buttonId: `${prefix}patnerbot`, buttonText: { displayText: '```PATNER BOT```' }, type: 1 }
+                  ]
+        sendButLocation(from, teks, gam, but)
+           break
 
 
 
@@ -412,8 +393,12 @@ case 'self':
           	uptime = process.uptime()
          	 // var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
          	isSelf = true
-          	fakestatus(`「 *SELF-MODE* 」`)
-          	break
+          	gam = fs.readFileSync('./Poto/gura3.png')
+          but = [
+          { buttonId: `${prefix}public`, buttonText: { displayText: '```Pindah Ke Public```' }, type: 1 }, 
+                  ]
+        sendButLocation(from, gam, but)
+           break
           
           
 //━━━━━━━━━━━━━━━[ ISI CASE LU NGAB ]━━━━━━━━━━━━━━━\\          
